@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Paradigm Shift by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div class="cursor small"></div>
+    <div class="cursor big"></div>
+		<div class="menubar" style="display: flex;">
+			<li>HOME</li>
+			<li>ABOUT</li>
+			<li>SKILLS</li>
+			<li>PORTFOLIO</li>
+			<li>CONTACT ME</li>
+		</div>
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+
+				<!-- Intro -->
+					<section class="intro">
+						
+						
+						<header>	
+							<h1>ANIRUDH .M.</h1>
+							<div id="typed-text"></div>
+
+<script>
+  const typedTextElement = document.getElementById("typed-text");
+  const cursorElement = document.createElement("span");
+  cursorElement.className = "typed-cursor";
+  cursorElement.textContent = "|"; // Initial cursor
+
+  typedTextElement.appendChild(cursorElement);
+
+  const sentences = [
+    "Fresh Talent in Tech",
+    "Aspiring Web Developer"
+  ];
+
+  let index = 0;
+
+  function typeSentence(sentence) {
+    let i = 0;
+    const typeInterval = setInterval(() => {
+      if (i <= sentence.length) {
+        typedTextElement.textContent = sentence.substring(0, i) + "|";
+        i++;
+      } else {
+        clearInterval(typeInterval);
+        setTimeout(() => {
+          backspaceSentence(sentence);
+        }, 1000); // Adjust delay before backspacing
+      }
+    }, 100); // Adjust typing speed
+  }
+
+  function backspaceSentence(sentence) {
+    let i = sentence.length;
+    const backspaceInterval = setInterval(() => {
+      if (i >= 0) {
+        typedTextElement.textContent = sentence.substring(0, i) + "|";
+        i--;
+      } else {
+        clearInterval(backspaceInterval);
+        setTimeout(() => {
+          typeNextSentence();
+        }, 500); // Adjust delay before typing the next sentence
+      }
+    }, 50); // Adjust backspacing speed
+  }
+
+  function typeNextSentence() {
+    index = (index + 1) % sentences.length;
+    typeSentence(sentences[index]);
+  }
+
+  // Start typing the first sentence
+  typeSentence(sentences[index]);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const cursorSmall = document.querySelector('.small');
+    const cursorBig = document.querySelector('.big');
+
+    const positionElement = (e) => {
+        const mouseY = e.clientY;
+        const mouseX = e.clientX;
+
+        cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    };
+
+    window.addEventListener('mousemove', positionElement);
+});
+
+
+
+
+
+
+/*loading skills*/
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to animate skill bars when they come into view
+function animateSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-bar');
+
+    skillBars.forEach(skillBar => {
+        if (isInViewport(skillBar)) {
+            const percent = skillBar.getAttribute('data-percent');
+            skillBar.style.setProperty('--percent', percent);
+        }
+    });
+}
+
+// Event listener for scrolling to trigger animation
+document.addEventListener('scroll', animateSkillBars);
+
+// Initial check on page load
+document.addEventListener('DOMContentLoaded', animateSkillBars);
+
+
+</script>
+
+<style>
+  .typed-cursor {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+</style>
+
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly arrordesign"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							
+							<span class="image fill" data-position="center"><img src="images/gallery/fotor-ai-20240418141518.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>ABOUT ME</h2>
+							<li style="list-style-type: none;"><a  href="assets/ANIRUDH M (2).pdf" download class="button primary icon fa-download">DOWNLOAD RESUME</a></li>
+							<ul class="icons" style="margin-top: 35px;">
+								<li style="margin-left: 14px;"><a href="https://x.com/anirudhmain?t=Is_LfCfY2SrOKzxntVAw1w&s=09" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li style="margin-left: 14px;"><a href="https://www.instagram.com/anirudh_allu_?igsh=MXN6N2Q5Z3p1MHg5MQ==" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<li style="margin-left: 14px;"><a href="https://www.linkedin.com/in/anirudh-m-9869b9248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li style="margin-left: 14px;"><a href="https://github.com/Anirudh-M-C" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+							
+							  
+						</header>
+						<div class="content">
+							<p style="margin-top: 20px;"><strong>I'm Anirudh</strong>r
+								I am a recent graduate with a strong desire to advance in the IT business. I bring technical competence, database management abilities, and a strong project management acumen to the table. I'm excited to become a part of a vibrant team that takes on difficult tasks and creates real results for the organization's future.</p>
+							<span class="image main"><img src="images/pngwing.com (1).png" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>SKILLS</h2>
+							<img style="height: 230px;" src="images/pngwing.com (2).png" alt="">
+						</header>
+						<div class="content">
+							<h2>Expertise In</h2>
+							<ul class="feature-icons">
+								<div class="skill-container">
+									<div class="skill">
+										<div class="skill-name">HTML</div>
+										<div class="skill-bar skill-bar-1" data-percent="95"></div>
+									</div>
+									<div class="skill">
+										<div class="skill-name">CSS</div>
+										<div class="skill-bar" data-percent="78"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="feature-icons">
+								<div class="skill-container">
+									<div class="skill">
+										<div class="skill-name">Python</div>
+										<div class="skill-bar skill-bar-1" data-percent="84"></div>
+									</div>
+									<div class="skill">
+										<div class="skill-name">SQL</div>
+										<div class="skill-bar skill-bar-1" data-percent="90"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="feature-icons">
+								<div class="skill-container">
+									<div class="skill">
+										<div class="skill-name">Bootstrap</div>
+										<div class="skill-bar skill-bar-1" data-percent="80"></div>
+									</div>
+									<div class="skill">
+										<div class="skill-name">JS</div>
+										<div class="skill-bar skill-bar-1" data-percent="45"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="feature-icons">
+								<div class="skill-container">
+									<div class="skill">
+										<div class="skill-name">ReactJS</div>
+										<div class="skill-bar skill-bar-1" data-percent="70"></div>
+									</div>
+									<div class="skill">
+										<div class="skill-name">Django</div>
+										<div class="skill-bar skill-bar-1" data-percent="81"></div>
+									</div>
+								</div>
+							</ul>
+							
+
+
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>PORTFOLIO</h2>
+						</header>
+						<div class="content">
+							<h2>My Projects</h2>
+							<!-- Section -->
+								<section style="margin-bottom: 40px;">
+									<header>
+										
+										
+									</header>
+									<div class="content content-project ">
+										<div class="image-hover image-hover1">
+											<img src="images/reverie.png" alt="Image" class="hover-image  shining-border">
+											<div class="hover-text">
+												<p>E-Commerce website</p>
+											</div>
+										</div>
+										<div class="image-hover">
+											<img src="images/pngwing.com.png" alt="Image" class="hover-image shining-border">
+											<div class="hover-text">
+												<p>Chat Bot</p>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section style="margin-bottom: 40px;">
+									<div class="content content-project ">
+										<div class="image-hover image-hover1">
+											<img src="images/pngwing.com (4).png" alt="Image" class="hover-image  shining-border">
+											<div class="hover-text">
+												<p>Library Management Web</p>
+											</div>
+										</div>
+										<div class="image-hover">
+											<img src="images/pngwing.com (3).png" alt="Image" class="hover-image shining-border">
+											<div class="hover-text">
+												<p>Livestock Monitoring</p>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>EDUCATION</h2>
+						</header>
+						<div class="content">
+							
+							<ul class="actions">
+								<li style="list-style-type: none;"><a  href="assets/ANIRUDH M (2).pdf" download class="button primary icon fa-download">DOWNLOAD RESUME</a></li>
+								<li><a href="#" class="button large">View More</a></li>
+							</ul>
+						</div>
+					</section>
+
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Get in touch</h2>
+						</header>
+						<div class="content">
+							<h2>CONTACT ME</h2>
+							<p>I'm excited to connect with you! Whether you have questions, want to discuss potential projects, or simply want to say hello, feel free to reach out using the information below. I'm eager to collaborate and explore opportunities together.
+
+								Let's build something great!
+								<div class="fields">
+									<div class="field half">
+										<input type="text" disabled name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" disabled name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" disabled id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" disabled value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+						</div>
+						<footer>
+							<ul class="items">
+								<li>
+									<h3>Email</h3>
+									<a href="#">anirudhm394@gmail.com</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<a href="#">+91-9496636320</a>
+								</li>
+								<li>
+									<h3>Address</h3>
+									<span>######### ###### Eruvatty ,Kottayam Poil(p.o.)[Kerala]</span>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons">
+										<li><a href="https://x.com/anirudhmain?t=Is_LfCfY2SrOKzxntVAw1w&s=09" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.instagram.com/anirudh_allu_?igsh=MXN6N2Q5Z3p1MHg5MQ==" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.linkedin.com/in/anirudh-m-9869b9248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/Anirudh-M-C" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon fa-codepen"><span class="label">Codepen</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Copyright -->
+					<div style="color: black;" class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">Anirudh M</a><a href="https://themewagon.com/"></a></div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
