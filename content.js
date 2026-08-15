@@ -47,7 +47,7 @@ window.SITE_CONTENT = {
     experience: "1.7+ Years",
     education: "B.Tech, IT",
     stack: "Python / Odoo / PostgreSQL",
-    text: "I'm a Python and Odoo developer focused on building and customizing business applications (1.7+ yrs). My work involves Odoo module development, business workflows, data models, reporting, automation, and module migrations across areas such as CRM, Sales, Inventory, Purchase and Accounting."
+    text: "I'm a Python and Odoo developer focused on building and customizing business applications. My work involves Odoo module development, business workflows, data models, reporting, automation, and module migrations across areas such as CRM, Sales, Inventory, Purchase and Accounting."
   },
 
   // ---------------- EXPERIENCE / TIMELINE ----------------
