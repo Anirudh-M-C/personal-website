@@ -1073,17 +1073,5 @@ numEls.forEach(el=> numObserver.observe(el));
   }
 })();
 </script>
-<script>
-function forceRepaint(){
-  document.documentElement.style.transform = 'translateZ(0)';
-  requestAnimationFrame(function(){
-    document.documentElement.style.transform = '';
-    window.scrollTo(window.scrollX, window.scrollY + 1);
-    window.scrollTo(window.scrollX, window.scrollY);
-  });
-}
-window.addEventListener('orientationchange', function(){ setTimeout(forceRepaint, 250); });
-window.addEventListener('resize', function(){ setTimeout(forceRepaint, 250); });
-</script>
 </body>
 </html>
