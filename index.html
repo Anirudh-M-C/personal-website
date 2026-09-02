@@ -1073,5 +1073,14 @@ numEls.forEach(el=> numObserver.observe(el));
   }
 })();
 </script>
+  <script>
+window.addEventListener('orientationchange', function(){
+  setTimeout(function(){
+    document.body.style.display = 'none';
+    void document.body.offsetHeight;
+    document.body.style.display = '';
+  }, 60);
+});
+</script>
 </body>
 </html>
