@@ -366,8 +366,10 @@
   .tl-role{ font-size:clamp(22px,2.6vw,32px); font-weight:600; }
   .tl-org{ color:var(--accent); font-family:'Space Mono',monospace; font-size:13px; margin-top:10px; letter-spacing:0.04em; }
   .tl-period{ color:var(--text-3); font-family:'Space Mono',monospace; font-size:12px; margin-top:6px; }
-  .tl-location{ color:var(--text-3); font-family:'Space Mono',monospace; font-size:12px; margin-top:4px; letter-spacing:0.02em; }
-  .tl-location::before{ content:'📍 '; }
+  .tl-location{ color:var(--text-3); font-family:'Space Mono',monospace; font-size:12px; margin-top:4px; letter-spacing:0.02em; display:flex; align-items:center; gap:6px; transition:color .3s; }
+  .tl-location svg{ width:11px; height:11px; flex-shrink:0; opacity:0.75; }
+  .tl-item:hover .tl-location{ color:var(--text-2); }
+  .tl-item:hover .tl-location svg{ opacity:1; }
   .tl-period-top{ color:var(--text-2); font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:10px; }
   .present-glow{
     color:var(--mono-green); font-weight:700; text-shadow:0 0 10px rgba(95,214,138,0.65);
@@ -838,7 +840,7 @@ document.querySelectorAll('.ov-link').forEach(l=> l.addEventListener('click', ()
         <div class="tl-period-top">${item.periodTop || ''}${item.current ? ' — <span class="present-glow">PRESENT</span>' : ''}</div>
         <div class="tl-role">${item.role || ''}</div>
         <div class="tl-org">${item.org || ''}</div>
-        ${item.location ? `<div class="tl-location">${item.location}</div>` : ''}
+        ${item.location ? `<div class="tl-location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>${item.location}</div>` : ''}
         ${item.dateRange ? `<div class="tl-period">${item.dateRange}</div>` : ''}
         <p class="tl-desc">${item.desc || ''}</p>`;
       timeline.appendChild(el);
