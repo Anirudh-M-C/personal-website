@@ -1,27 +1,4 @@
-/*
-  ============================================================
-  EDIT THIS FILE TO UPDATE YOUR SITE — NO OTHER FILE NEEDED.
-  ============================================================
 
-  This is the ONLY file you need to touch to change your
-  experience, description, role, projects, etc.
-
-  HOW TO EDIT ON GITHUB (no coding tools needed):
-    1. Open this file (content.js) in your GitHub repo.
-    2. Click the pencil (Edit) icon in the top right.
-    3. Change the text between the quotes " " below.
-    4. Scroll down, click "Commit changes".
-    5. GitHub Pages / Netlify will redeploy automatically
-       (usually within 1–2 minutes).
-
-  RULES TO AVOID BREAKING THE PAGE:
-    - Always keep the quotes " " around text.
-    - Always keep the commas , at the end of each line
-      (except the last item in a { } or [ ] block).
-    - To add a new project or job, copy an existing block
-      between { and }, paste it, and edit the text.
-    - Don't remove the curly braces { } or square brackets [ ].
-*/
 
 window.SITE_CONTENT = {
 
@@ -60,6 +37,7 @@ window.SITE_CONTENT = {
       periodTop: "2025",
       role: "Jr. Odoo Developer",
       org: "ENZAPPS IT SOLUTIONS",
+      location: "Remote · Company based in Saudi Arabia",
       dateRange: "",
       desc: "Developing and customizing Odoo functionality, including QWeb and Excel reports, module migrations, business workflows, and functionality across CRM, Sales, Purchase, Inventory, Accounting, Emails and Payments."
     },
@@ -68,6 +46,7 @@ window.SITE_CONTENT = {
       periodTop: "2024 — 2025",
       role: "Python Odoo Developer Intern",
       org: "BIZTRAS IT SOLUTIONS",
+      location: "Thalassery, Kerala, India",
       dateRange: "DECEMBER 2024 — MAY 2025",
       desc: "Worked on Odoo module migration and customization, learning models, views and controllers. Also trained students in Python and Odoo development."
     }
@@ -81,12 +60,12 @@ window.SITE_CONTENT = {
     {
       title: "Professional Odoo Development",
       desc: "Professional experience across Odoo development, customization, reporting, migrations, business workflows and integrations.",
-      tags: ["CRM", "Sales", "Purchase", "Inventory", "Accounting", "Invoicing", "Payments", "QWeb Reports", "Excel Reports", "Module Customization", "Module Migration", "Automation", "Security", "Integrations"]
+      tags: ["CRM", "Sales", "Purchase", "Inventory", "Website", "Manufacturing", "Time Off", "Email Marketing", "Project", "Payment", "Employee", "QWeb Reports", "Excel Reports", "Module Migration"]
     },
     {
-      title: "Hospital Management System",
-      desc: "A custom Odoo 17 build for managing patients, appointments, and records in one place.",
-      tags: ["Odoo 16", "Python", "PostgreSQL", "XML"]
+      title: "AI-Powered WhatsApp–Odoo ERP Assistant",
+      desc: "An end-to-end WhatsApp-Odoo AI assistant built with FastAPI, WhatsApp Cloud API, Odoo, LLMs and RAG for ERP operations — with tool calling, conversation memory, human handover, Razorpay payments, and Redis-backed background workers.",
+      tags: ["FastAPI", "Odoo", "WhatsApp Cloud API", "LLM", "RAG", "Redis", "Docker", "Razorpay", "Tool Calling", "Human Handover"]
     },
     {
       title: "Social Media Website",
